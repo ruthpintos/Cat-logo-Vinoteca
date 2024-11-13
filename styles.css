@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+/* General */
+body {
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #fff;
+}
+
+/* Estilos para la barra de navegación */
+.navbar-white {
+    background-color: #73383E;
+    /* Color de fondo de la barra de navegación */
+}
+
+.navbar-white .navbar-brand,
+.navbar-white .nav-link {
+    color: #ffffff;
+    /* Color blanco para el texto */
+}
+
+/* Para asegurarte de que el color de texto se mantenga en hover */
+.navbar-white .nav-link:hover {
+    color: #D9D9D9;
+    /* Color del texto al pasar el mouse, puedes ajustarlo si lo deseas */
+}
+
+
+/* Configura el color del fondo de la barra de navegación */
+.navbar {
+    background-color: #73383E;
+}
+
+/* Estilos del ícono de menú hamburguesa */
+.navbar-toggler {
+    border-color: #322D29;
+    /* Borde del menú hamburguesa */
+}
+
+.navbar-toggler-icon {
+    background-color: #73383E;
+    /* Color del menú hamburguesa */
+
+}
+
+/* Hover del menú hamburguesa */
+.navbar-toggler:hover .navbar-toggler-icon {
+    background-color: #A66073;
+    /* Color cuando pase el mouse */
+}
+
+/* Estilos para el carrito */
+.cart {
+    position: relative;
+}
+
+.cart a {
+    display: flex;
+    align-items: center;
+    color: white;
+    /* Color del texto del icono */
+    text-decoration: none;
+}
+
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.carrito {
+    position: fixed;
+    top: 20px;
+    right: 0;
+    width: 35%; /* Ajusta el ancho según tu diseño */
+}
+
+/* Estilo para el ícono de carrito */
+.cart-icon {
+    font-size: 24px;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+/* Estilo para el contador de artículos en el carrito */
+#cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.add-to-cart-btn {
+    display: inline-block;
+    background-color: #73383E;
+    color: #73383E;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #a30808;
+    /* Color más claro al pasar el cursor */
+}
+
+.carousel-item img {
+    max-width: 300px;
+    /* Ajusta el ancho máximo según tus necesidades */
+    width: auto;
+    /* Mantener la proporcionalidad */
+    height: auto;
+    /* Mantener la proporción de la imagen */
+    margin: 0 auto;
+    /* Para centrar horizontalmente */
+}
+
+.custom-arrow {
+    font-size: 30px;
+    /* Ajusta el tamaño según lo que necesites */
+    color: #fff;
+    /* Color de la flecha */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semi-transparente */
+    border: none;
+    /* Sin borde */
+    border-radius: 50%;
+    /* Flechas redondeadas */
+    width: 50px;
+    /* Ajusta el ancho */
+    height: 50px;
+    /* Ajusta la altura */
+    display: flex;
+    /* Flex para centrar el contenido */
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+    transition: background-color 0.3s;
+    /* Transición suave para el fondo */
+}
+
+.custom-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Color de fondo al pasar el mouse */
+}
+
+.left-arrow {
+    position: absolute;
+    /* Posicionar la flecha a la izquierda */
+    left: 10px;
+    /* Ajusta la distancia desde la izquierda */
+    top: 50%;
+    /* Centrando verticalmente */
+    transform: translateY(-50%);
+    /* Ajustar posición */
+}
+
+.right-arrow {
+    position: absolute;
+    /* Posicionar la flecha a la derecha */
+    right: 10px;
+    /* Ajusta la distancia desde la derecha */
+    top: 50%;
+    /* Centrando verticalmente */
+    transform: translateY(-50%);
+    /* Ajustar posición */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-background {
+    background-image: url('img/Fondo-vinoteca-1.jpg');
+    background-color: #A66073;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    height: 400px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Estilos de la sección de beneficios */
+#beneficios {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#beneficios h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.card-title {
+    color: #007bff;
+}
+
+.card-text {
+    color: #555;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    background-color: #f8f9fa;
+}
+
+.btn-custom {
+    background-color: #73383E;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #5e2e3c;
+}
+
+footer {
+    background-color: #73383E;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos de la sección de contacto */
+
+.contacto {
+    color: #333333;
+}
+
+/* Encabezado */
+h1 {
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h2 {
+    color: #73383E;
+    /* Tono marrón oscuro */
+    font-size: 1.8em;
+    margin: 20px 0 10px;
+}
+
+/* Sección de Productos */
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #8b0000;
+    /* Bordes rojos para destacar el vino */
+}
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 1.5em;
+    color: #8b0000;
+    margin: 10px 0;
+}
+
+.product-info p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #663300;
+}
+
+.btn-custom {
+    background-color: #A66073;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #73383E;
+    color: white;
+}
+
+.btn-custom:focus,
+.btn-custom:active {
+    background-color: #A66073;
+    color: white;
+}
+
+/* Pie de página */
+/* Footer */
+footer {
+    background-color: #73383E;
+    color: #73383E;
+    padding: 1.5rem 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Estilos para los enlaces del footer */
+.footer .social-icon {
+    text-decoration: none;
+    /* Quita el subrayado */
+}
+
+.footer .social-icon:hover {
+    text-decoration: none;
+    /* Mantiene sin subrayado al hacer hover */
+}
+
+/* /////////////////////////////////sobre-nosotros */
+
+p {
+    font-size: large;
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 992px) {
+    .carrito {
+        position: fixed;
+        width: 35%;
+        top: 20px;
+        right: 0;
+    }
+
+    .hero-background {
+        padding: 100px 0;
+        height: 400px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+
+    footer p,
+    footer .text-light {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}
+
+/* En pantallas pequeñas, oculta el texto "Cosecha Selecta" y ajusta el isotipo */
+@media (max-width: 768px) {
+    .navbar-brand {
+        display: none;
+        /* Ocultar "Cosecha Selecta" */
+    }
+
+    .logo-isotipo {
+        width: 30px;
+        /* Ajusta el tamaño del isotipo para pantallas pequeñas */
+    }
+}
+
+/* Margen adicional entre imágenes en dispositivos grandes */
+@media (min-width: 768px) {
+
+    .row.g-3>.col-md-6,
+    .row.g-3>.col-md-4,
+    .row.g-3>.col-md-8 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 2rem 1rem;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 1.8rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    /* Footer padding reduction */
+    footer {
+        padding: 1rem 0;
+    }
+}
+
+.carousel-inner img,
+.img-placeholder {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tamaño y visibilidad por defecto del isotipo y la marca */
+.logo-isotipo {
+    width: 40px;
+    /* Tamaño del isotipo ajustado */
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-brand {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+
+    /* Añadir más ajustes responsivos */
+    header {
+        padding: 2rem 1rem;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 1.8rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    /* Footer padding reduction */
+    footer {
+        padding: 1rem 0;
+    }
+
+    footer p,
+    footer .text-light {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    /* Navbar */
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 576px) {
+    .hero-background {
+        padding: 50px 0;
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .carrito {
+        position: static;
+        width: 100%;
+    }
+}
+
+/* Ajustes para pantallas medianas */
+@media (min-width: 768px) and (max-width: 991px) {
+    .carrito {
+        position: relative;
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+}
+
+/* Estilos generales y de tarjetas */
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn-custom {
+    background-color: #73383E;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #5e2e3c;
+}
+
+footer {
+    background-color: #73383E;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+/* Ajustes adicionales de responsividad */
+.product-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
