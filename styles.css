@@ -9,46 +9,9 @@ body {
     color: #fff;
 }
 
-/* Estilos para la barra de navegación */
-.navbar-white {
-    background-color: #73383E;
-    /* Color de fondo de la barra de navegación */
-}
-
-.navbar-white .navbar-brand,
-.navbar-white .nav-link {
-    color: #ffffff;
-    /* Color blanco para el texto */
-}
-
-/* Para asegurarte de que el color de texto se mantenga en hover */
-.navbar-white .nav-link:hover {
-    color: #D9D9D9;
-    /* Color del texto al pasar el mouse, puedes ajustarlo si lo deseas */
-}
-
-
 /* Configura el color del fondo de la barra de navegación */
 .navbar {
     background-color: #73383E;
-}
-
-/* Estilos del ícono de menú hamburguesa */
-.navbar-toggler {
-    border-color: #322D29;
-    /* Borde del menú hamburguesa */
-}
-
-.navbar-toggler-icon {
-    background-color: #73383E;
-    /* Color del menú hamburguesa */
-
-}
-
-/* Hover del menú hamburguesa */
-.navbar-toggler:hover .navbar-toggler-icon {
-    background-color: #A66073;
-    /* Color cuando pase el mouse */
 }
 
 /* Estilos para el carrito */
@@ -59,19 +22,17 @@ body {
 .cart a {
     display: flex;
     align-items: center;
-    color: white;
-    /* Color del texto del icono */
+    color: white;/* Color del texto del icono */
     text-decoration: none;
 }
 
-#cart-count {
+.cart-count {
     position: absolute;
     top: -5px;
     right: -5px;
-    background-color: red;
     color: white;
     border-radius: 50%;
-    padding: 2px 6px;
+    padding: 2px 5px;
     font-size: 12px;
     font-weight: bold;
 }
@@ -83,15 +44,6 @@ body {
     width: 35%; /* Ajusta el ancho según tu diseño */
 }
 
-/* Estilo para el ícono de carrito */
-.cart-icon {
-    font-size: 24px;
-}
-
-.cart-icon {
-    position: relative;
-}
-
 /* Estilo para el contador de artículos en el carrito */
 #cart-count {
     position: absolute;
@@ -100,9 +52,30 @@ body {
     background-color: red;
     color: white;
     border-radius: 50%;
-    padding: 2px 6px;
+    padding: 2px 5px;
     font-size: 12px;
     font-weight: bold;
+}
+
+/* Efecto Parallax */
+.parallax {
+    background-image: url('img/fondo-vinoteca-1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px; /* Ajusta la altura según tu diseño */
+}
+
+/* Opcional: Estilos de texto en la sección parallax */
+.parallax-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    color: #fff;
+    text-align: center;
 }
 
 .add-to-cart-btn {
@@ -128,62 +101,40 @@ body {
     /* Mantener la proporcionalidad */
     height: auto;
     /* Mantener la proporción de la imagen */
-    margin: 0 auto;
-    /* Para centrar horizontalmente */
+    margin: 0 auto; /* Para centrar horizontalmente */
 }
 
 .custom-arrow {
-    font-size: 30px;
-    /* Ajusta el tamaño según lo que necesites */
-    color: #fff;
-    /* Color de la flecha */
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Fondo semi-transparente */
-    border: none;
-    /* Sin borde */
-    border-radius: 50%;
-    /* Flechas redondeadas */
-    width: 50px;
-    /* Ajusta el ancho */
-    height: 50px;
-    /* Ajusta la altura */
-    display: flex;
-    /* Flex para centrar el contenido */
-    justify-content: center;
-    /* Centrar horizontalmente */
-    align-items: center;
-    /* Centrar verticalmente */
-    transition: background-color 0.3s;
-    /* Transición suave para el fondo */
+    font-size: 30px; /* Ajusta el tamaño según lo que necesites */
+    color: #fff; /* Color de la flecha */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Flechas redondeadas */
+    width: 50px; /* Ajusta el ancho */
+    height: 50px; /* Ajusta la altura */
+    display: flex; /* Flex para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
 }
 
 .custom-arrow:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    /* Color de fondo al pasar el mouse */
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo al pasar el mouse */
 }
 
 .left-arrow {
-    position: absolute;
-    /* Posicionar la flecha a la izquierda */
-    left: 10px;
-    /* Ajusta la distancia desde la izquierda */
-    top: 50%;
-    /* Centrando verticalmente */
-    transform: translateY(-50%);
-    /* Ajustar posición */
+    position: absolute; /* Posicionar la flecha a la izquierda */
+    left: 10px; /* Ajusta la distancia desde la izquierda */
+    top: 50%; /* Centrando verticalmente */
+    transform: translateY(-50%); /* Ajustar posición */
 }
 
 .right-arrow {
-    position: absolute;
-    /* Posicionar la flecha a la derecha */
-    right: 10px;
-    /* Ajusta la distancia desde la derecha */
-    top: 50%;
-    /* Centrando verticalmente */
-    transform: translateY(-50%);
-    /* Ajustar posición */
+    position: absolute; /* Posicionar la flecha a la derecha */
+    right: 10px; /* Ajusta la distancia desde la derecha */
+    top: 50%; /* Centrando verticalmente */
+    transform: translateY(-50%); /* Ajustar posición */
 }
-
 
 .container {
     max-width: 1200px;
@@ -192,7 +143,6 @@ body {
 }
 
 .hero-background {
-    background-image: url('img/Fondo-vinoteca-1.jpg');
     background-color: #A66073;
     background-size: cover;
     background-position: center;
@@ -235,7 +185,7 @@ body {
 
 .btn-custom {
     background-color: #73383E;
-    color: white;
+    color: black;
 }
 
 .btn-custom:hover {
@@ -257,93 +207,23 @@ footer {
 /* Estilos de la sección de contacto */
 
 .contacto {
-    color: #333333;
+    color: black;
+    font-size: 3em;
 }
 
 /* Encabezado */
 h1 {
-    font-size: 2.5em;
-    color: #fff;
+    font-size: 4em;
+    color: white;
     text-align: center;
-    margin-bottom: 20px;
-    font-weight: 700;
+    margin-bottom: 10px;
+    font-weight: 700px;
 }
 
 h2 {
-    color: #73383E;
-    /* Tono marrón oscuro */
-    font-size: 1.8em;
+    color: black;
+    font-size: 3em;
     margin: 20px 0 10px;
-}
-
-/* Sección de Productos */
-
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px 0;
-}
-
-.product-item {
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    overflow: hidden;
-    width: calc(33.333% - 20px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.product-item:hover {
-    transform: translateY(-10px);
-}
-
-.product-image img {
-    width: 100%;
-    height: auto;
-    border-bottom: 3px solid #8b0000;
-    /* Bordes rojos para destacar el vino */
-}
-
-.product-info {
-    padding: 15px;
-    text-align: center;
-}
-
-.product-info h3 {
-    font-size: 1.5em;
-    color: #8b0000;
-    margin: 10px 0;
-}
-
-.product-info p {
-    font-size: 1em;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.product-price {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #663300;
-}
-
-.btn-custom {
-    background-color: #A66073;
-    color: white;
-}
-
-.btn-custom:hover {
-    background-color: #73383E;
-    color: white;
-}
-
-.btn-custom:focus,
-.btn-custom:active {
-    background-color: #A66073;
-    color: white;
 }
 
 /* Pie de página */
@@ -394,7 +274,7 @@ p {
     }
 
     h2 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 }
 
@@ -431,13 +311,11 @@ p {
 /* En pantallas pequeñas, oculta el texto "Cosecha Selecta" y ajusta el isotipo */
 @media (max-width: 768px) {
     .navbar-brand {
-        display: none;
-        /* Ocultar "Cosecha Selecta" */
+        display: none; /* Ocultar "Cosecha Selecta" */
     }
 
     .logo-isotipo {
-        width: 30px;
-        /* Ajusta el tamaño del isotipo para pantallas pequeñas */
+        width: 30px; /* Ajusta el tamaño del isotipo para pantallas pequeñas */
     }
 }
 
@@ -452,6 +330,7 @@ p {
 }
 
 @media (max-width: 768px) {
+   
     header {
         padding: 2rem 1rem;
     }
@@ -488,8 +367,7 @@ p {
 
 /* Tamaño y visibilidad por defecto del isotipo y la marca */
 .logo-isotipo {
-    width: 40px;
-    /* Tamaño del isotipo ajustado */
+    width: 40px; /* Tamaño del isotipo ajustado */
     height: auto;
     margin-right: 10px;
 }
@@ -635,4 +513,3 @@ footer {
     max-width: 150px;
     margin: 0 auto;
 }
-
